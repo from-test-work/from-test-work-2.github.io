@@ -1,0 +1,31 @@
+//========================================================
+//                     Variables
+//=========================================================
+//Colors
+$white: #ffffff;
+$black: #000000;
+$default: #444857;
+$primary: #e6ad47;
+$secondary: #edff40;
+$link-color: #0270c9;
+$danger-color: #cd3d22;
+$success-color: #6cbb2c;
+
+//Backgrounds
+$header-bg: #454857;
+$content-bg: lighten(desaturate(adjust-hue($primary, -42.8235), 100.0000), 44.9020);
+$footer-bg: $primary;
+
+//Fonts
+$default-font: 'Open Sans', sans-serif;
+$linecons-font: 'Linecons';
+$fa: 'FontAwesome';
+$material-font: "Material Design Icons";
+$icons1: "\e001", "\e000", "\e007";
+$i: 0;
+
+$ico: '"../images/icon__phone.png"', '"../images/icon__fax.png"', '"../images/icon__location.png"', '"../images/icon__address.png"';
+$social-clrs: #56789c, #3b579d, #1bb2e9, #f2720c;
+$social-footer-clrs: #7795c4, #526191, #e79a4b, #e16c4d, #72c2fc;
+
+$clrs: #4377bb, #b0bedf, #6ec0f1, #96cccc, #f1ca44, #dc853a, #7b4f39, #bcd353, #a0a1a1, #cb2137, #7e4998, #74b762;

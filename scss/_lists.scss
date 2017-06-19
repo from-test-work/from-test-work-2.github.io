@@ -1,0 +1,191 @@
+/*========================================================
+                     List styles
+=========================================================*/
+/*=================     Inline List    ====================*/
+.inline-list {
+  @include clearfix();
+  > li {
+    float: left;
+    & + li {
+      margin-left: 5px;
+    }
+  }
+  &__filter-mod {
+    > li {
+      & + li {
+        margin-left: 0;
+      }
+    }
+  }
+  &.social-list {
+    li {
+      margin-right: 0;
+      > a {
+        @each $social in vk, facebook, twitter, odnoklassniki {
+          $i: $i + 1;
+          &.fa-#{$social} {
+            background: (nth($social-clrs, $i));
+          }
+        }
+      }
+      &:hover {
+        > a {
+          @each $social in vk, facebook, twitter, odnoklassniki {
+            $i: $i + 1;
+            &.fa-#{$social} {
+              background: (darken(nth($social-clrs, $i), 10%));
+              color: $white;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=================     Marked Llist    ====================*/
+.marked-list {
+  li {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+/*=================     Item Llist    ====================*/
+.item-list {
+  > li {
+    display: block;
+    & + li {
+      margin-top: 5px;
+    }
+  }
+}
+
+/*=================     Color Llist    ====================*/
+.color-list{
+  > li{
+    &:nth-child(even){
+      background: lighten(desaturate(adjust-hue($default, -227.3684), 12.2581), 60.5882);
+    }
+  }
+}
+
+
+/*==================     Input Box     ======================*/
+.input-popup-box {
+  position: relative;
+  span {
+    display: block;
+    font: 700 15px/20px $default-font;
+    em {
+      color: $danger-color;
+    }
+    //& + * {
+    //  margin-top: 5px;
+    //}
+    .required {
+      display: inline-block;
+      color: $danger-color;
+    }
+  }
+  //inputs
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0 12px;
+    height: 30px;
+    font: 400 14px/14px $default-font;
+    color: $black;
+    outline: none;
+    -webkit-appearance: none;
+    background: $white;
+    border: 2px solid $primary;
+    //@include box-shadow(inset 0px 0px 5px 3px rgba(242, 242, 242, 0.7));
+    @include border-radius(0px);
+    &:hover {
+      border: 2px solid lighten($default, 50%);
+    }
+    &:focus {
+      border: 2px solid lighten($primary, 20%);
+      &:hover {
+        border: 2px solid lighten($primary, 20%);
+      }
+    }
+    &:-moz-placeholder {
+      color: $default;
+    }
+    &::-webkit-input-placeholder {
+      color: $default;
+    }
+    &:disabled{
+      border: 2px solid lighten($default, 50%);
+    }
+  }
+  input[type="number"],
+  input[type="date"] {
+    line-height: 100%;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  & + .input-popup-box {
+    margin-top: 10px;
+  }
+  //textarea
+  textarea {
+    @extend input[type="text"];
+    height: 90px;
+    padding-right: 10px;
+    font: 400 15px/20px $default-font;
+    resize: none;
+    overflow-y: hidden;
+  }
+}
+
+.popup-file {
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  padding: 0 12px;
+  height: 30px;
+  //font: 400 14px/14px $default-font;
+  color: $black;
+  outline: none;
+  -webkit-appearance: none;
+  background: $white;
+  border: 2px solid $primary;
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.popup-file__status {
+  text-align: center;
+  display: block;
+  span {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,1583 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Главая</title>
+    <!-- Links -->
+    <link href="css/jquery-fancybox.css" rel="stylesheet"/>
+    <link href="css/ion.rangeSlider.css" rel="stylesheet"/>
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="css/rateit.css" rel="stylesheet"/>
+    <link href="css/materialDesignIcons.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- JS -->
+    <script src="js/yandex-map-api.js"></script>
+</head>
+<body>
+<div class="mmenu-overlay_full invisible"></div>
+<div class="page">
+    <!--============================
+    HEADER
+    =============================-->
+    <header class="header">
+        <!--=== Section1 ====-->
+        <section class="well__hdr">
+            <div class="container container_relative">
+                <span id="mmenu" class="mmenu"></span>
+                <!--Навигационное меню-->
+                <nav class="nav">
+                    <ul class="sf-menu">
+                        <li>
+                            <a href="#">Новостройки</a>
+                        </li>
+                        <li>
+                            <a href="#">Строители</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Бани 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бани 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бани 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Ипотека и кредитование</a>
+                        </li>
+                        <li>
+                            <a href="#">Прочее</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- выбор города -->
+                <div class="your-city">
+                    <img src="images/map-orange-point.png" alt=""/>
+                    <a onclick="openPopupStyle('your_city','fancyboxSkin1');">Московская область</a>
+                </div>
+            </div>
+        </section>
+        <!--=== Section2 ====-->
+        <section class="well2 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="brand">
+                            <div class="brand__logo">
+                                <img src="images/logo-main.png" alt=""/>
+                            </div>
+                            <div class="brand__slogan">
+                                Купить квартиры от застройщиков в новостройках Москвы
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-2">
+                        <a class="btn1" href="#">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== Section3 ====-->
+        <section class="bg-white">
+            <!--=== Section3 ====-->
+            <div class="container">
+                <!--=== Filter ====-->
+                <div class="filter">
+                    <!--=== Filter ====-->
+                    <img src="images/big-filter-bg.jpg" alt=""/>
+
+                    <div class="filter__container">
+                        <!--=== Filter Visible part ====-->
+                        <div class="filter__container-visible">
+                            <div class="row">
+                                <!--=== Filter Visible left part ====-->
+                                <div class="col-md-6">
+                                    <div class="filter-wrap left-wrap">
+                                        <ul class="inline-list">
+                                            <!--=== left section ====-->
+                                            <li class="filter-wrap__left">
+                                                <div class="title">
+                                                    <h4>Название</h4>
+
+                                                    <div class="search-in-map">
+                                                        <img src="images/map-dark-point.png" alt=""/>
+                                                        <a>Поиск на карте</a>
+                                                    </div>
+                                                </div>
+                                                <label>
+                                                    <input type="text" value="" placeholder="Название ЖК или адрес..."
+                                                           required="">
+                                                </label>
+                                            </li>
+                                            <!--=== right section ====-->
+                                            <li class="filter-wrap__right">
+                                                <div class="title">
+                                                    <h4>Цена, руб.</h4>
+                                                </div>
+                                                <ul class="inline-list inline-list__filter-mod">
+                                                    <li>
+                                                        <label>
+                                                            <input type="number" value="" placeholder="От">
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="number" value="" placeholder="До">
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--=== Filter Visible right part ====-->
+                                <div class="col-md-6">
+                                    <div class="filter-wrap right-wrap">
+                                        <!--=== left section ====-->
+                                        <div class="filter-wrap__left">
+                                            <div class="title">
+                                                <h4>Количество комнат</h4>
+                                            </div>
+                                            <div id="rooms-count" class="choice-element">
+                                                <span class="circle">1</span>
+                                                <span class="circle">2</span>
+                                                <span class="circle">3</span>
+                                                <span class="circle">4+</span>
+                                                <span class="rectangle">Апартаменты</span>
+                                                <span class="rectangle">Студия</span>
+                                            </div>
+                                        </div>
+                                        <!--=== right section ====-->
+                                        <div class="filter-wrap__right">
+                                            <div class="title">
+                                                <h4>Площадь: м&sup2</h4>
+                                            </div>
+                                            <ul class="inline-list inline-list__filter-mod">
+                                                <li>
+                                                    <label>
+                                                        <input type="number" value="" placeholder="От">
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="number" value="" placeholder="До">
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--=== Filter Invisible part ====-->
+                        <div class="filter__container-invisible hidden">
+                            <!--=== Filter Invisible part first row ====-->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="title">
+                                        <h4>Сдача в</h4>
+                                    </div>
+                                    <input type="text" id="filter-slider" name="filter-slider" value=""/>
+                                </div>
+                                <div class="col-md-4 col-sm-6 floor-count">
+                                    <div class="title">
+                                        <h4>Кол-во этажей</h4>
+                                    </div>
+                                    <div id="floor-count" class="choice-element">
+                                        <span class="rectangle rectangle__mod1">не важно</span>
+                                        <span class="rectangle rectangle__mod1">до 6</span>
+                                        <span class="rectangle rectangle__mod1">до 15</span>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="checkbox" name="type">
+                                        <label for="checkbox">Кроме первого</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <ul class="inline-list">
+                                        <li>
+                                            <div class="title">
+                                                <h4>Район</h4>
+                                            </div>
+                                            <select name="search_select" class="search_select">
+                                                <option value="type-disabled" selected disabled>
+                                                    не выбрано
+                                                </option>
+                                                <option value="type-1">Район 1</option>
+                                                <option value="type-2">Район 2</option>
+                                                <option value="type-3">Район 3 Район 3 Район 3</option>
+                                                <option value="type-4">Район 4 Район 4 Район 4</option>
+                                                <option value="type-5">Район 5</option>
+                                                <option value="type-6">Район 6</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <h4>Метро</h4>
+                                            </div>
+                                            <div class="showmap" onclick="openMetroPopup('tab_region');">
+                                                <p>выбрать</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--=== Filter Invisible part second row ====-->
+                            <div class="row">
+                                <div class="col-md-12 second-row">
+                                    <ul class="inline-list">
+                                        <li>
+                                            <div class="title">
+                                                <h4>Отделка</h4>
+                                            </div>
+                                            <div id="otdelka" class="choice-element">
+                                                <span class="rectangle rectangle__mod1">не важно</span>
+                                                <span class="rectangle rectangle__mod1">под ключ</span>
+                                                <span class="rectangle rectangle__mod1">под чистовую</span>
+                                                <span class="rectangle rectangle__mod1">без отделки</span>
+                                            </div>
+                                            <div class="checkbox-group">
+                                                <input type="checkbox" id="checkbox_parking" name="type">
+                                                <label for="checkbox_parking">Парковка</label>
+
+                                                <input type="checkbox" id="checkbox_balkon" name="type">
+                                                <label for="checkbox_balkon">Балкон</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <h4>Материал</h4>
+                                            </div>
+                                            <div id="material" class="choice-element">
+                                                <span class="rectangle rectangle__mod1">Не важно</span>
+                                                <span class="rectangle rectangle__mod1">Кирпич</span>
+                                                <span class="rectangle rectangle__mod1">Монолит</span>
+                                                <span class="rectangle rectangle__mod1">Панель</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <h4>Ипотека</h4>
+                                            </div>
+                                            <div id="ipoteka" class="choice-element">
+                                                <span class="rectangle rectangle__mod1">Ипотека</span>
+                                                <span class="rectangle rectangle__mod1">Рассрочка</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--=== Filter close part ====-->
+                        <div class="filter__container-closing">
+                            <div class="closing-wrap">
+                                <div class="closing-wrap__header"></div>
+                                <div class="closing-wrap__main">
+                                    <input type="submit" class="btn1 btn1__mod1" value="ПОИСК"/>
+                                    <a class="hide-filter open"><span class="triger"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--============================
+    MAIN
+    =============================-->
+    <main class="main">
+        <!--1 Хлебные крошки-->
+        <section class="well_breadcrumb">
+            <div class="container">
+                <!--=== Навигация ===-->
+                <ul xmlns:v="http://rdf.data-vocabulary.org/#" class="navigation">
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="index.html">Главная</a>
+                    </li>
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" class="active" href="all-stocks.html">Акции</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--2 Контент-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!--=== ЛЕВАЯ ЧАСТЬ (ОСНОВНАЯ) ===-->
+                    <div class="col-md-9">
+                        <div class="building-card">
+                            <div class="building-card-cnt">
+                                <div class="box">
+                                    <div class="box__asside">
+                                        <div class="img-wrap">
+                                            <img src="images/builder/1.jpg" alt=""/>
+                                        </div>
+                                        <div class="reting-wrap offs1">
+                                            <div class="rateit"
+                                                 data-rateit-value="4.7"
+                                                 data-rateit-ispreset="true"
+                                                 data-rateit-readonly="true">
+                                            </div>
+                                            <span>4.7</span>
+                                        </div>
+                                    </div>
+                                    <div class="box__cnt">
+                                        <div class="box__cnt-head">
+                                            <h1 class="h1">ТСЖ «ЧЕМПИОН»</h1>
+                                        </div>
+                                        <div class="row box__cnt-main">
+                                            <div class="col-md-6 col-sm-6 box__cnt-main-left">
+                                                <div class="map-marker mdi mdi-map-marker">
+                                                    <p>Адрес:</p>
+                                                    <span>г. Краснодар</span>,
+                                                    <span>ул.Рашпилевская</span>,
+                                                    <span>д. 179</span>
+                                                </div>
+                                                <div class="phone mdi mdi-phone">
+                                                    <p>Телефоны:</p>
+                                                    <span><a href="callto:#">+7 (480) 800-80-80</a>,</span>
+                                                    <span><a href="callto:#">+7 (900) 000-00-00</a></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 box__cnt-main-right">
+                                                <div class="clock mdi mdi-clock">
+                                                    <p>
+                                                        Режим работы:
+                                                    </p>
+                                                    <ul class="work-days ">
+                                                        <li class="active"><a>Понедельник: 00:00–00:00</a></li>
+                                                        <li><a>Вторник: 00:00–00:00</a></li>
+                                                        <li><a>Среда: 00:00–00:00</a></li>
+                                                        <li><a>Четверг: 00:00–00:00</a></li>
+                                                        <li><a>Пятница: 00:00–00:00</a></li>
+                                                        <li><a>Суббота: 00:00–00:00</a></li>
+                                                        <li><a>Воскресенье: 00:00–00:00</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="building-card-cnt-main">
+                                    <h2 class="h2">Описание застройщика</h2>
+
+                                    <p>
+                                        Застройщик ГК "Мортон" - это одна из самых надежных и уважаемых строительных
+                                        компаний в Москве и Московской области с 19 летним опытом успешной работы.
+                                        Специфика компании – строительство крупных микрорайонов с развитой
+                                        инфраструктурой.
+                                    </p>
+
+                                    <p>
+                                        С каждым годом застройщик увеличивает объемы ввода недвижимости в эксплуатацию и
+                                        сдает еще больше квадратных метров. Компания расширяет географию своих проектов
+                                        и наращивает объемы строительства на Юге и Юго-западе Подмосковья, что особенно
+                                        актуально для покупателей, в связи с расширением Москвы в этом направлении.
+                                    </p>
+
+                                    <p>
+                                        Основной целью "Мортон" является строительство современных микрорайонов и
+                                        отдельных жилых домов с развитой инфраструктурой и комфортными условиями
+                                        проживания. Строительная компания, как правило, осуществляет обслуживание
+                                        новостроек в дальнейшем.
+                                    </p>
+
+                                    <p>
+                                        Строительная компания "Мортон" реализует квартиры в новостройке за наличный
+                                        расчет или в кредит на выгодных условиях. Квартиру можно приобрести как в
+                                        сданном доме, так и на любой стадии строительства.
+                                    </p>
+
+                                    <ul class="item-list offs8">
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">Бренд</span>
+                                                <span class="lr-cnt__right">Группа компаний АРС</span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">Сайт</span>
+                                                <span class="lr-cnt__right"><a href="">www.mosipoteka.ru</a></span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">ИНН</span>
+                                                <span class="lr-cnt__right">2308199953</span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">ОРГН</span>
+                                                <span class="lr-cnt__right">1132308006896</span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">Год основания</span>
+                                                <span class="lr-cnt__right">2004</span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lr-cnt">
+                                                <span class="lr-cnt__left">Объем строительства</span>
+                                                <span class="lr-cnt__right">37431 m&sup2</span>
+                                                <span class="lr-cnt__doted">&nbsp;</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!--=== Строящиеся объекты ===-->
+                                <div class="offs5">
+                                    <h2 class="h2">Строящиеся объекты</h2>
+                                    <ul class="row item-list popularItems">
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper red-triangle-stock">
+                                                <!--=== Item 1 image ====-->
+                                                    <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-МитинскAя» «Life-МитинскAя»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper">
+                                                <!--=== Item 1 image ====-->
+                                                <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper red-triangle-stock">
+                                                <!--=== Item 1 image ====-->
+                                                    <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper red-triangle-stock">
+                                                <!--=== Item 1 image ====-->
+                                                    <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper">
+                                                <!--=== Item 1 image ====-->
+                                                <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--=== Построенные объекты ===-->
+                                <div class="offs5">
+                                    <h2 class="h2">Построенные объекты</h2>
+                                    <ul class="row item-list popularItems">
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper">
+                                                <!--=== Item 1 image ====-->
+                                                <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-МитинскAя» «Life-МитинскAя»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper">
+                                                <!--=== Item 1 image ====-->
+                                                <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-6">
+                                            <div class="popularItems__wraper">
+                                                <!--=== Item 1 image ====-->
+                                                <img src="images/house/house.jpg" alt=""/>
+                                                <!--=== Item 1 rating-block ====-->
+                                                <div class="popularItems__wraper-rating">
+                                                    <!--=== rating ====-->
+                                                    <div class="rating-wrap">
+                                                        <div class="rateit"
+                                                             data-rateit-value="5"
+                                                             data-rateit-ispreset="true"
+                                                             data-rateit-readonly="true">
+                                                        </div>
+                                                        <span>5</span>
+                                                    </div>
+                                                    <!--=== reviews ====-->
+                                                    <div class="review-wrap">
+                                                        <a href="#">664</a>
+                                                    </div>
+                                                </div>
+                                                <!--=== Item 1 content-block ====-->
+                                                <div class="popularItems__wraper-cnt">
+                                                    <h3><a href="">ЖК «Life-Митинская»</a></h3>
+                                                    <!--<i class="mdi mdi-bell"></i>-->
+                                                    <ul class="marked-list info-list">
+                                                        <li class="subway mdi mdi-subway">
+                                                            <span><a href="#">Митино</a></span>
+                                                        </li>
+                                                        <li class="walk mdi mdi-walk">
+                                                            5 минут пешком
+                                                        </li>
+                                                        <li class="map-marker mdi mdi-map-marker">
+                                                            <span><a href="#" class="sity">Москва</a></span>,
+                                                            <span>2-й Грайвороновский проезд</span>,
+                                                            <span>вл. 38</span>,
+                                                            <span>стр. 1–10</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=== ПРАВАЯ ЧАСТЬ ===-->
+                    <div class="col-md-3">
+                        <div class="section1">
+                            <h3 class="h3">Квартиры по цене</h3>
+                            <ul class="first-prise-list">
+                                <li>
+                                    <div class="first-prise-list-cnt">
+                                        <span class="left"><img src="images/coins_1.png" alt=""/></span>
+                                        <span class="right">до <a href="#">1 500 000</a> руб.</span>
+                                        <span class="arrow"></span>
+                                        <span class="solid">&nbsp;</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-prise-list-cnt">
+                                        <span class="left"><img src="images/coins_2.png" alt=""/></span>
+                                        <span class="right">до <a href="#">2  000 000</a> руб.</span>
+                                        <span class="arrow"></span>
+                                        <span class="solid">&nbsp;</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-prise-list-cnt">
+                                        <span class="left"><img src="images/coins_3.png" alt=""/></span>
+                                        <span class="right">до <a href="#">3 000 000</a> руб.</span>
+                                        <span class="arrow"></span>
+                                        <span class="solid">&nbsp;</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-prise-list-cnt">
+                                        <span class="left"><img src="images/coins_4.png" alt=""/></span>
+                                        <span class="right">до <a href="#">5 000 000</a> руб.</span>
+                                        <span class="arrow"></span>
+                                        <span class="solid">&nbsp;</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="first-prise-list-cnt">
+                                        <span class="left"><img src="images/coins_5.png" alt=""/></span>
+                                        <span class="right">свыше <a href="#">5 000 000</a> руб.</span>
+                                        <span class="arrow"></span>
+                                        <span class="solid">&nbsp;</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section2">
+                            <ul class="type-house type-house1 border-line">
+                                <li><a href="n-room.html">Студии</a></li>
+                                <li><a href="n-room.html">Однокомнатные</a></li>
+                                <li><a href="n-room.html">Двухкомнатные</a></li>
+                                <li><a href="n-room.html">Трехкомнатные</a></li>
+                                <li><a href="n-room.html">Четыре и более комнаты</a></li>
+                                <li><a href="n-room.html">Апартаменты</a></li>
+                            </ul>
+                        </div>
+                        <div class="section3">
+                            <ul class="type-house type-house2 border-line">
+                                <li><a href="n-room.html">Эконом класс</a></li>
+                                <li><a href="n-room.html">Кофморт класс</a></li>
+                                <li><a href="n-room.html">Элит класс</a></li>
+                            </ul>
+                        </div>
+                        <div class="section4 similar">
+                            <h3 class="h3 offs3">Акции</h3>
+                            <ul class="row item-list similar-list2">
+                                <li class="col-md-12 col-sm-4 col-xs-6">
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <a href="">
+                                                <img src="images/galery/galery.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box__cnt-head">
+                                                <a href="">«Life-Митинская»</a>
+                                            </div>
+                                            <div class="box__cnt-main">
+                                                <p>Квартиры из второй очереди</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-12 col-sm-4 col-xs-6">
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <a href="">
+                                                <img src="images/galery/galery.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box__cnt-head">
+                                                <a href="">«Life-Митинская»</a>
+                                            </div>
+                                            <div class="box__cnt-main">
+                                                <p>Квартиры из второй очереди Квартиры из второй очереди Квартиры из
+                                                    второй очереди Квартиры из второй очереди</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-12 col-sm-4 col-xs-6">
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <a href="">
+                                                <img src="images/galery/galery.jpg" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box__cnt-head">
+                                                <a href="">«Life-Митинская»</a>
+                                            </div>
+                                            <div class="box__cnt-main">
+                                                <p>Квартиры из второй очереди Квартиры из второй очереди Квартиры из
+                                                    второй очереди</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social-block">
+                            <!--=== VK Plugin ====-->
+                            <div class="vk">
+                                <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+                                <div id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", {mode: 2, width: "auto", height: "400"}, 20003922);
+                                </script>
+
+                            </div>
+                            <!--=== Faceboock Plugin ====-->
+                            <div class="facebook">
+                                <div class="fb-page"
+                                     data-href="https://www.facebook.com/facebook"
+                                     data-tabs="timeline"
+                                     data-small-header="true"
+                                     data-height="400"
+                                     data-width="458"
+                                     data-adapt-container-width="true"
+                                     data-hide-cover="false"
+                                     data-show-facepile="false"
+                                     data-show-posts="false">
+                                    <div class="fb-xfbml-parse-ignore">
+                                        <blockquote cite="https://www.facebook.com/facebook">
+                                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            </div>
+                        </div>
+                        <div class="section7">
+                            <!-- Место для рекламы -->
+                            <div class="callboard">
+                                <p>Рекламное место</p>
+
+                                <p><span>сдается</span></p>
+
+                                <div class="size">220×300</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--6 Карта -->
+        <section class="offs4">
+            <div class="container">
+                <div class="h2">Все обьекты застройщика на карте</div>
+                <div class="maps-wrap">
+                    <div id="map1" class="map1" style="height: 420px"></div>
+                    <div class="map-controls">
+
+                        <div class="offs1">
+                            <select name="search_select" class="search_select">
+                                <option value="type-disabled" selected disabled>
+                                    не выбрано
+                                </option>
+                                <option value="type-1">Район 1</option>
+                                <option value="type-2">Район 2</option>
+                                <option value="type-3">Район 3 Район 3 Район 3</option>
+                                <option value="type-4">Район 4 Район 4 Район 4</option>
+                                <option value="type-5">Район 5</option>
+                                <option value="type-6">Район 6</option>
+                            </select>
+                        </div>
+                        <div class="offs1">
+                            <select name="search_select" class="search_select">
+                                <option value="type-disabled" selected disabled>
+                                    не выбрано
+                                </option>
+                                <option value="type-1">Район 1</option>
+                                <option value="type-2">Район 2</option>
+                                <option value="type-3">Район 3 Район 3 Район 3</option>
+                                <option value="type-4">Район 4 Район 4 Район 4</option>
+                                <option value="type-5">Район 5</option>
+                                <option value="type-6">Район 6</option>
+                            </select>
+                        </div>
+                        <div class="offs1">
+                            <select name="search_select" class="search_select">
+                                <option value="type-disabled" selected disabled>
+                                    не выбрано
+                                </option>
+                                <option value="type-1">Район 1</option>
+                                <option value="type-2">Район 2</option>
+                                <option value="type-3">Район 3 Район 3 Район 3</option>
+                                <option value="type-4">Район 4 Район 4 Район 4</option>
+                                <option value="type-5">Район 5</option>
+                                <option value="type-6">Район 6</option>
+                            </select>
+                        </div>
+                        <div class="scroll">
+                            <ul>
+                                <li>
+                                    <!--<h4 class="h4"><a href="">ЖК «Life-Митинская»</a></h4>-->
+                                    <div class="name-complex"><a href=""> ЖК «Life-Митинская»</a></div>
+                                    <div class="bot">от <span>2 000 000</span> руб.</div>
+                                </li>
+                                <li>
+                                    <div class="name-complex"><a href=""> ЖК «Life-Митинская»</a></div>
+
+                                    <div class="bot">от <span>2 000 000</span> руб.</div>
+                                </li>
+                                <li>
+                                    <div class="name-complex"><a href=""> ЖК «Life-Митинская»</a></div>
+
+                                    <div class="bot">от <span>2 000 000</span> руб.</div>
+                                </li>
+                                <li>
+                                    <div class="name-complex"><a href=""> ЖК «Life-Митинская пассад»</a></div>
+
+                                    <div class="bot">от <span>2 000 000</span> руб.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more">
+                            <div class="scroll-down">
+
+                            </div>
+                            <div class="scroll-more ">
+                                <a href="#">еще 1823 новостройки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row sertificat">
+                    <div class="col-md-9">
+                        <div class="row sertificat-cnt">
+                            <h2 class="h2">Сертификаты</h2>
+
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0U0dxS24wSkxzZkU/view?usp=sharing">
+                                    <img src="images/sertifications/sertification1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0OWVodUFqN1ctZmc/view?usp=sharing">
+                                    <img src="images/sertifications/sertification2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0U0dxS24wSkxzZkU/view?usp=sharing">
+                                    <img src="images/sertifications/sertification1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0OWVodUFqN1ctZmc/view?usp=sharing">
+                                    <img src="images/sertifications/sertification2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0U0dxS24wSkxzZkU/view?usp=sharing">
+                                    <img src="images/sertifications/sertification1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-xs-4 sertificate">
+                                <a class="fancybox-button" rel="fancybox-button"
+                                   href="https://drive.google.com/file/d/0ByxfYuSbaxM0OWVodUFqN1ctZmc/view?usp=sharing">
+                                    <img src="images/sertifications/sertification2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!--К О М М Е Н Т А Р И И -->
+                        <div class="coments">
+                            <h2 class="h2">Комментарии</h2>
+                            <ul class="coments-cnt item-list">
+                                <li>
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <div class="img-wrap">
+                                                <img src="images/users/avatar.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box-head">
+                                                <div class="user-name">Ваня Иванов</div>
+                                                <div class="date-publich">13.11.2015 г.</div>
+                                                <div class="rateit"
+                                                     data-rateit-value="5"
+                                                     data-rateit-ispreset="true"
+                                                     data-rateit-readonly="true">
+                                                </div>
+                                            </div>
+                                            <div class="box-main">
+                                                Трешка просто шикарная!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="coments-cnt item-list">
+                                        <li>
+                                            <div class="box">
+                                                <div class="box__asside">
+                                                    <div class="img-wrap">
+                                                        <img src="images/users/avatar.jpg" alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="box__cnt">
+                                                    <div class="box-head">
+                                                        <div class="user-name">Ваня Иванов</div>
+                                                        <div class="date-publich">13.11.2015 г.</div>
+                                                    </div>
+                                                    <div class="box-main">
+                                                        Трешка просто шикарная!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <div class="img-wrap">
+                                                <img src="images/users/user01.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box-head">
+                                                <div class="user-name">Константин Константинопольский</div>
+                                                <div class="date-publich">13.11.2015 г.</div>
+                                                <div class="rateit"
+                                                     data-rateit-value="5"
+                                                     data-rateit-ispreset="true"
+                                                     data-rateit-readonly="true">
+                                                </div>
+                                            </div>
+                                            <div class="box-main">
+                                                Звонил, узнавал - все аккредитации есть, планировки улет, даже
+                                                двухэтажные
+                                                квартиры есть.. И домик маленький, уютный, были б деньги - взял бы себе
+                                                Звонил, узнавал - все аккредитации есть, планировки улет, даже
+                                                двухэтажные
+                                                квартиры есть.. И домик
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <div class="box__asside">
+                                            <div class="img-wrap">
+                                                <img src="images/users/avatar.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="box__cnt">
+                                            <div class="box-head">
+                                                <div class="user-name">Явшев Антон</div>
+                                                <div class="date-publich">13.11.2015 г.</div>
+                                                <div class="rateit"
+                                                     data-rateit-value="5"
+                                                     data-rateit-ispreset="true"
+                                                     data-rateit-readonly="true">
+                                                </div>
+                                            </div>
+                                            <div class="box-main">
+                                                Трешка просто шикарная!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Д О Б А В И Т Ь  К О М М Е Н Т А Р И И -->
+                        <div class="add-coments">
+                            <h2 class="h2">Добавить отзыв о застройщике</h2>
+
+                            <form action="">
+
+                                <div class="rating-wrap">
+                                    <div class="rating-title">Ваша Оценка</div>
+                                    <div class="rateit bigstars"
+                                         data-rateit-value=""
+                                         data-rateit-ispreset="true"
+                                         data-rateit-readonly="false">
+                                    </div>
+                                </div>
+
+                                <div class="rating-title">Ваше сообщение</div>
+                                <div class="input-box input-box-textarea">
+                                    <textarea name="" rows="10" placeholder=""></textarea>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn1">Отправить</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="media-footer-img">
+            <div class="container">
+                <img src="images/big-filter-bg.jpg" alt=""/>
+                <img src="images/media_footer.jpg" alt=""/>
+            </div>
+        </section>
+    </main>
+    <!--============================
+    FOOTER
+    =============================-->
+    <footer class="footer">
+        <section class="well_ftr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer__logo">
+                            <img src="images/logo-main.png" alt=""/>
+                        </div>
+                        <div class="footer__nav">
+                            <ul class="inline-list">
+                                <li><a href="#">Новостройки</a></li>
+                                <li>
+                                    <a href="#">Строители</a>
+                                    <ul class="item-list">
+                                        <li><a href="#">Застройщики</a></li>
+                                        <li><a href="#">Подрядчики</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ипотека и кредитование</a></li>
+                                <li><a href="#">Акции</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__reg">
+                            <ul class="inline-list location">
+                                <li><a href="#">Новая Москва</a></li>
+                                <li><a href="#">Подмосковье</a></li>
+                            </ul>
+                            <ul class="marked-list inline-list reg">
+                                <li><a href="#">Зарегистрироваться</a></li>
+                                <li><a href="#">Вход</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="media-info">Портал предоставляет информацию о всех новостройках Москвы, Московской области и Новой
+                            Москвы</p>
+
+                        <div class="footer__address">
+                            <ul class="marked-list inline-list address">
+                                <li><a href="tel:#">+7 (000) 000-00-00</a></li>
+                                <li><a href="tel:#">+7 (000) 000-00-00</a></li>
+                                <li><a href="mailto:#">info@novostroy.ru</a></li>
+                                <li><span>100000</span>, <span>г. Москва</span>, <span>ул. Радио, дом 00, к. 0</span>.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            © <span id="copyright-year">2015 Новострой</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--============================
+    Modal Windows
+    =============================-->
+    <section class="hidden">
+        <!-- Your city PopUp -->
+        <form class="modalWindow-yourcity" id="your_city" action="">
+            <div class="cities-wrapper">
+                <div class="cities-cols">
+                    <div class="cities-item">
+                        <div class="cities-letter">А</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Абакан</a></li>
+                                <li><a href="#">Ангарск</a></li>
+                                <li><a href="#">Армавир</a></li>
+                                <li><a href="#">Архангельск</a></li>
+                                <li><a href="#">Астрахань</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Б</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Балашиха</a></li>
+                                <li><a href="#">Барнаул</a></li>
+                                <li><a href="#">Белгород</a></li>
+                                <li><a href="#">Бийск</a></li>
+                                <li><a href="#">Братск</a></li>
+                                <li><a href="#">Брянск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">В</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Великий Новгород</a></li>
+                                <li><a href="#">Владивосток</a></li>
+                                <li><a href="#">Владимир</a></li>
+                                <li><a href="#">Волгоград</a></li>
+                                <li><a href="#">Волжский</a></li>
+                                <li><a href="#">Вологда</a></li>
+                                <li><a href="#">Воронеж</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Д</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Дзержинск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Е</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Екатеринбург</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">З</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Златоуст</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">И</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Иваново</a></li>
+                                <li><a href="#">Ижевск</a></li>
+                                <li><a href="#">Иркутск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Й</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Йошкар-Ола</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">К</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Казань</a></li>
+                                <li><a href="#">Калининград</a></li>
+                                <li><a href="#">Калуга</a></li>
+                                <li><a href="#">Каменск-Уральский</a></li>
+                                <li><a href="#">Кемерово</a></li>
+                                <li><a href="#">Комсомольск-на-Амуре</a></li>
+                                <li><a href="#">Кострома</a></li>
+                                <li><a href="#">Краснодар</a></li>
+                                <li><a href="#">Красноярск</a></li>
+                                <li><a href="#">Курган</a></li>
+                                <li><a href="#">Курск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Л</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Липецк</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">М</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Магнитогорск</a></li>
+                                <li><a href="#">Миасс</a></li>
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Мурманск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Н</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Набережные Челны</a></li>
+                                <li><a href="#">Находка</a></li>
+                                <li><a href="#">Нижневартовск</a></li>
+                                <li><a href="#">Нижнекамск</a></li>
+                                <li><a href="#">Нижний Новгород</a></li>
+                                <li><a href="#">Новокузнецк</a></li>
+                                <li><a href="#">Новороссийск</a></li>
+                                <li><a href="#">Новосибирск</a></li>
+                                <li><a href="#">Норильск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">О</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Омск</a></li>
+                                <li><a href="#">Оренбург</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">П</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Пенза</a></li>
+                                <li><a href="#">Пермь</a></li>
+                                <li><a href="#">Петрозаводск</a></li>
+                                <li><a href="#">Петропавловск-Камчатский</a></li>
+                                <li><a href="#">Подольск</a></li>
+                                <li><a href="#">Прокопьевск</a></li>
+                                <li><a href="#">Псков</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Р</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Ростов-на-Дону</a></li>
+                                <li><a href="#">Рязань</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">С</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Салават</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Санкт-Петербург</a></li>
+                                <li><a href="#">Саранск</a></li>
+                                <li><a href="#">Саратов</a></li>
+                                <li><a href="#">Северодвинск</a></li>
+                                <li><a href="#">Смоленск</a></li>
+                                <li><a href="#">Сочи</a></li>
+                                <li><a href="#">Ставрополь</a></li>
+                                <li><a href="#">Старый Оскол</a></li>
+                                <li><a href="#">Стерлитамак</a></li>
+                                <li><a href="#">Сургут</a></li>
+                                <li><a href="#">Сыктывкар</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Т</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Тамбов</a></li>
+                                <li><a href="#">Тверь</a></li>
+                                <li><a href="#">Томск</a></li>
+                                <li><a href="#">Тула</a></li>
+                                <li><a href="#">Тюмень</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">У</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Улан-Удэ</a></li>
+                                <li><a href="#">Ульяновск</a></li>
+                                <li><a href="#">Уссурийск</a></li>
+                                <li><a href="#">Уфа</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Х</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Хабаровск</a></li>
+                                <li><a href="#">Химки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Ч</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Чебоксары</a></li>
+                                <li><a href="#">Челябинск</a></li>
+                                <li><a href="#">Чита</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Э</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Энгельс</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Ю</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Южно-Сахалинск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cities-item">
+                        <div class="cities-letter">Я</div>
+                        <div class="cities-list">
+                            <ul>
+                                <li><a href="#">Якутск</a></li>
+                                <li><a href="#">Ярославль</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+<!--JS-->
+<script src="js/core.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery-mCustomScrollbar.js"></script>
+<!-- coded by Belkins -->
+</body>
+</html>

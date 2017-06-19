@@ -1,0 +1,66 @@
+//========================================================
+//                    Pagination
+//=========================================================
+.pagination {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  .pag {
+    display: inline-block;
+    @include clearfix;
+    li {
+      display: inline-block;
+      float: left;
+      > a {
+        color: $default;
+        display: inline-block;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        background: $white;
+        border: 2px solid $primary;
+        line-height: 36px;
+        text-decoration: none;
+        //@include box-shadow(0px 2px 3px -1px rgba($black, 0.3));
+      }
+      &.active {
+        > a {
+          border: 2px solid transparent;
+          background: $primary;
+          color: $default;
+          font-weight: 700;
+        }
+      }
+      &:hover {
+        > a {
+          border: 2px solid transparent;
+          background: $primary;
+          color: $default;
+          font-weight: 700;
+        }
+      }
+      & + li {
+        margin-left: 10px;
+      }
+      .first {
+        width: 60px;
+        padding: 0 10px;
+      }
+    }
+    .dotet {
+      position: relative;
+      top: 12px;
+    }
+  }
+}
+
+@media(max-width: 479px) {
+  .pagination {
+    display: block;
+    text-align: center;
+    .pag {
+      display: inline-block;
+    }
+  }
+}
+

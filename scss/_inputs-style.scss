@@ -1,0 +1,107 @@
+//========================================================
+//                     Inputs
+//=========================================================
+/*==================     Input List     ======================*/
+.input-list {
+  display: block;
+  li {
+    display: block;
+    @include clearfix;
+    &:first-child {
+      margin-top: 0px;
+    }
+    & + li {
+      margin-top: 15px;
+    }
+    .left {
+      float: left;
+      width: 48%;
+    }
+    .right {
+      float: right;
+      width: 48%;
+    }
+  }
+}
+
+/*==================     Input Box     ======================*/
+.input-box {
+  position: relative;
+  span {
+    display: block;
+    font: 300 12px/20px $default-font;
+    color: $default;
+  }
+  //inputs
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 35px;
+    height: 40px;
+    font: 400 14px/38px $default-font;
+    color: $default;
+    outline: none;
+    -webkit-appearance: none;
+    background: $white;
+    border: 2px solid $primary;
+    @include box-shadow(inset 0px 0px 5px 3px rgba(242, 242, 242, 0.7));
+    //@include border-radius(4px);
+    &:hover {
+      border: 2px solid lighten(saturate(adjust-hue($default, 0.0000), 0.0000), 34.9020);
+    }
+    &:focus {
+      border: 2px solid $primary;
+      &:hover {
+        border: 2px solid $primary;
+      }
+    }
+    &:disabled{
+      border: 2px solid lighten(desaturate(adjust-hue($default, -227.3684), 12.2581), 54.7059);
+    }
+  }
+  input[type="number"],
+  input[type="date"] {
+    line-height: 100%;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  input[type="date"]::-webkit-outer-spin-button,
+  input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type='date'] {
+    -moz-appearance: textfield;
+  }
+  //textarea
+  textarea {
+    @extend input[type="text"];
+    height: 130px;
+    padding-right: 10px;
+    font: 400 14px/20px $default-font;
+    resize: none;
+    overflow-y: hidden;
+  }
+  //input type['submit']
+  input[type="submit"] {
+    @extend .btn1;
+    width: auto;
+    height: 40px;
+    padding: calc((40px - 16px - 2px) / 2) 30px;
+  }
+  label {
+    display: block;
+    position: relative;
+  }
+}

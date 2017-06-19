@@ -1,0 +1,139 @@
+/*!
+ *
+ * jQuery TE 1.4.0 , http://jqueryte.com/
+ * Copyright (C) 2013, Fatih Koca (fattih@fattih.com), (http://jqueryte.com/about)
+
+ * jQuery TE is provided under the MIT LICENSE.
+ *
+*/
+
+/* editor's general field */
+
+/* ==========================================================================
+   Editable Custom Styles
+========================================================================== */
+
+.editable {
+  .jqte {
+    margin: 30px 0 0;
+    border: 2px solid #efbf88;
+    //border: none;
+    border-radius: 0px;
+    overflow: hidden;
+    @include box-shadow(none);
+    @include transition(0.4s ease all);
+    &_toolbar {
+      overflow: auto;
+      padding: 8px 11px;
+      background: $primary;
+      border-bottom: none;;
+      .jqte_tool {
+        border: 1px solid #f0cc7c;
+        @include border-radius(0);
+        width: 26px;
+        height: 26px;
+        &_4 {
+          .jqte_tool_icon {
+            //background: url("../images/b.png");
+            background: url("../images/jquery-te.png") -43px 2px no-repeat;
+            //background-size: auto;
+          }
+        }
+        &_5 {
+          .jqte_tool_icon {
+            background: url("../images/jquery-te.png") -65px 2px no-repeat;
+          }
+        }
+        &_8 {
+          .jqte_tool_icon {
+            background: url("../images/jquery-te.png") -130px 2px no-repeat;
+          }
+        }
+        &_icon {
+          border: none;
+          display: block;
+          width: 25px;
+          height: 25px;
+        }
+        &:hover {
+          border: 1px solid #fff;
+          background: transparent;
+          &_icon {
+            border: none;
+          }
+        }
+        & + .jqte_tool {
+          margin-left: 10px;
+        }
+      }
+    }
+    &_editor {
+      padding: 20px;
+      background: $white;
+      min-height: 100px;
+      max-height: 600px;
+      overflow: auto;
+      outline: none;
+      word-wrap: break-word;
+      -ms-word-wrap: break-word;
+      resize: none;
+      @include box-shadow(inset 0px 0px 5px 3px rgba(242, 242, 242, 0.7));
+      .overflow_hiden {
+        overflow: hidden;
+      }
+      i {
+        font-style: italic;
+        font-weight: 300;
+      }
+      b {
+        font-weight: 700;
+      }
+      ul {
+        display: block;
+        li {
+          display: block;
+          padding-left: 15px;
+          position: relative;
+          text-transform: none;
+          &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 10px;
+            margin-top: -3px;
+            width: 6px;
+            height: 6px;
+            background: $black;
+            @include border-radius(50%);
+          }
+        }
+      }
+    }
+    &_source {
+      &.jqte_hiddenField {
+        display: none;
+      }
+    }
+    & * {
+      color: $default;
+    }
+  }
+  &_mod1 {
+    .jqte {
+      &_editor {
+        min-height: 225px;
+        max-height: 225px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .editable {
+    .jqte {
+      &_editor {
+        max-height: 250px;
+      }
+    }
+  }
+}

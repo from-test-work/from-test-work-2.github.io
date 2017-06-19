@@ -1,0 +1,265 @@
+//========================================================
+//                     Tabs
+//=========================================================
+/*==================     tab-style     ======================*/
+.tab-style {
+  background: $white;
+  .ui-widget-content {
+    background: $white;
+  }
+
+  .ui-widget {
+    font: 400 14px/14px $default-font !important;
+  }
+
+  .ui-tabs-nav {
+    padding: 0;
+    @include clearfix;
+    li {
+      float: left;
+      display: inline-block;
+      top: 4px;
+      position: relative;
+      a {
+        font: 700 16px/39px $default-font;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .ui-tabs-anchor {
+    padding: 10px 15px 10px 15px !important;
+  }
+  .ui-widget-header {
+    background: transparent;
+    border-bottom: 4px solid #009cfa;
+    .ui-state-active {
+      @include linearGradientLeftToRight (#026be1, #009cfa);
+
+    }
+    .ui-state-hover {
+      @include linearGradientLeftToRight (#026be1, #009cfa);
+    }
+  }
+
+  .ui-state-default {
+    a {
+      color: $default;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .ui-state-focus {
+    a {
+      color: $default;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .ui-state-active {
+    a {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.tabs-1 {
+  .schedule {
+    font: 400 14px/22px $default-font;
+    color: $default;
+    li {
+      span {
+        font: 700 14px/22px $default-font;
+      }
+    }
+  }
+  p {
+    font: 400 14px/18px $default-font;
+  }
+}
+
+.tabs-2 {
+  .services-and-prices {
+
+    li {
+      position: relative;
+      font: 400 14px/30px $default-font;
+      color: $default;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 5px;
+        height: 5px;
+        background: $default;
+        left: 15px;
+        top: 11px;
+        @include border-radius(50%);
+      }
+    }
+
+  }
+}
+
+.tabs-3 {
+  .reviews-cnt {
+    padding: 15px 0;
+    border-top: 1px solid #979797;
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+
+    }
+
+    .title-and-reteit {
+      display: block;
+      li {
+        display: inline-block;
+        & + li {
+          margin-left: 10px;
+        }
+      }
+      .title-w {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 285px;
+        p {
+          font: 700 14px/20px $default-font;
+        }
+      }
+    }
+    // end ul
+    .coments {
+      display: block;
+      @include clearfix;
+      .borderImage {
+        display: inline-block;
+        float: left;
+        img {
+          width: 89px;
+          height: 89px;
+        }
+      }
+
+      .coment {
+        display: inline-block;
+        width: calc(100% - 90px);
+        p {
+          padding-left: 25px;
+          font: 400 14px/20px $default-font;
+          a {
+            color: $primary;
+            text-decoration: none;
+            &:hover {
+              color: $primary;
+            }
+            &:active {
+              color: #9702A7;
+              text-decoration: underline;
+            }
+          }
+          time {
+            display: inline-block;
+            color: lighten(saturate(adjust-hue($default, 0.0000), 0.0000), 35.6863);
+          }
+          a, time {
+            font: 400 14px/20px $default-font;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*==================     tab-style     ======================*/
+$valuetabs: 3;
+.tabs-modal {
+  ul.ui-tabs-nav {
+    display: block;
+    li {
+      &.ui-state-default,
+      &.ui-state-active {
+        width: (100% / $valuetabs);
+        display: inline-block;
+        float: left;
+        a {
+          width: 100%;
+          padding: 14px 0;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          font: 400 16px/16px $default-font;
+          background: lighten(saturate(adjust-hue($default, 0.0000), 0.0000), 64.7059);
+          color: $default;
+          &:hover {
+            background: $primary;
+            color: $white;
+          }
+        }
+      }
+      &.ui-state-active {
+        a {
+          background: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.tab_metro-maps,
+.tab_region,
+.tab_area {
+  @include clearfix;
+  .left-part,
+  .right-part {
+    display: inline-block;
+  }
+  .left-part {
+    width: calc(945px - 225px);
+    float: left;
+    padding: 10px;
+    @include box-sizing(border-box);
+    //background: lighten($primary, 30%);
+    h2 {
+      font: 400 22px/1.4 $default-font;
+      border-bottom: 1px solid lighten(desaturate(adjust-hue($default, 0.6316), 7.5852), 48.6275);
+      text-transform: uppercase;
+    }
+    &_cnt {
+      width: 100%;
+      height: 540px;
+      margin-top: 12px;
+      overflow: auto;
+    }
+  }
+  .right-part {
+    margin-top: 40px;
+    padding: 10px;
+    width: 225px;
+    //background: lighten($secondary, 30%);
+    .select-station-list {
+      height: 435px;
+      overflow: auto;
+      font: 400 14px/20px $default-font;
+      a {
+        color: $primary;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    h4 {
+      color: lighten(saturate(adjust-hue($default, 0.0000), 0.0000), 27.0588);
+      font: 400 14px/20px $default-font;
+      & + * {
+        margin-top: 10px;
+      }
+    }
+  }
+}
